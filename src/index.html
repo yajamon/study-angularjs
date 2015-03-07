@@ -13,7 +13,7 @@
         <p><input type="text" ng-model="query.name"></p>
         <ul>
             <li ng-repeat="user in users|filter:query">
-                {{user.name}} {{user.score}}
+                {{$index+1}} {{user.name}} {{user.score}}
             </li>
         </ul>
     </div>
