@@ -11,7 +11,7 @@
 
     <div ng-controller="mainCtrl">
         <p>{{25 * 500|number}}</p>
-        <p>{{25 * 500|currency}}</p>
+        <p>{{25 * 500|currency:"￥"}}</p>
         <ul>
             <li ng-repeat="user in users">
                 {{user.name|uppercase}} {{user.score|number:4}}
