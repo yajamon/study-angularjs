@@ -11,7 +11,7 @@
 
     <div ng-controller="mainCtrl">
         <ul>
-            <li ng-repeat="user in users|limitTo:5">
+            <li ng-repeat="user in users|orderBy:'score'">
                 {{user.name}} {{user.score}}
             </li>
         </ul>
