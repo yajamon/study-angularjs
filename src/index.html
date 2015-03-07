@@ -13,7 +13,7 @@
         <p>{{users.length}} users.</p>
         <ul>
             <li ng-repeat="user in users">
-                {{user.name}} {{user.score}}
+                {{user.name|uppercase}} {{user.score|number:4}}
             </li>
         </ul>
     </div>
